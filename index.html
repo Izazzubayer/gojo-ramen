@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojo Ramen - Premium Sushi & Ramen</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <img src="Gojo Ramen.png" alt="Gojo Ramen Logo" class="logo-image">
+                    <span class="logo-text">Gojo Ramen</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Gojo Ramen</h1>
+            <p class="hero-subtitle">Experience the finest sushi and ramen in town</p>
+            <a href="#menu" class="cta-button" style="background-color: #A02727 ; color: white; font-family: 'Kyoto World Regular', sans-serif; font-size: 1.2rem; font-weight: 700; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="sushi">Sushi</button>
+                <button class="filter-btn" data-category="ramen">Ramen</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Gojo Ramen</h2>
+                    <p>Founded with a passion for authentic Japanese cuisine, Gojo Ramen brings you the finest sushi and ramen experience. Our master chefs combine traditional techniques with modern innovation to create unforgettable dishes.</p>
+                    <p>Every ingredient is carefully selected and every dish is crafted with precision and love. From our signature ramen bowls to our artisanal sushi creations, we promise an authentic taste of Japan.</p>
+                </div>
+                <div class="about-image">
+                    <div class="chef-illustration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>15, 6 Tajmahal Rd, Dhaka 1207n<br>Mohammadpur,Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+880 131 7840 100</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Sun: 9:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required style="font-family: 'EB Garamond', serif;">
+                        <input type="email" placeholder="Your Email" required style="font-family: 'EB Garamond', serif;">
+                        <textarea placeholder="Your Message" rows="5" required style="font-family: 'EB Garamond', serif;"></textarea>
+                        <button type="submit" class="submit-btn" style="font-family: 'Kyoto World Regular', sans-serif; font-size: 1.2rem; font-weight: 700; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <img src="Gojo Ramen.png" alt="Gojo Ramen Logo" class="logo-image">
+                        <span class="logo-text" style="font-family: 'Kyoto World Regular', sans-serif; font-size: 2rem; color: #A02727;">Gojo Ramen</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gojo Ramen. <br> All rights reserved by <a href="https://pixelmango.studio" target="_blank" style="color: #A02727; text-decoration: none;">Pixel Mango Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
