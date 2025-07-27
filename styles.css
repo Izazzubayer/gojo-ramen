@@ -326,6 +326,7 @@ body {
     color: #020203;
     font-size: 1rem;
     flex: 1;
+    margin-bottom: 1rem;
 }
 
 .menu-item-bottom {
@@ -333,7 +334,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: auto;
-    /* padding-top: 1rem; */
+    padding-top: 1rem;
 }
 
 .menu-item-ingredients {
