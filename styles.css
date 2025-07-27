@@ -411,16 +411,18 @@ body {
     font-size: 1.1rem;
 }
 
-.chef-illustration {
+.chef-illustration-img {
     width: 100%;
     height: 400px;
-    background: url('gojo ramen.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* border-radius: 100px; */
-    position: relative;
-    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.chef-illustration-img:hover {
+    transform: scale(1.05);
 }
 
 /* .chef-illustration::before {
@@ -642,6 +644,11 @@ body {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .chef-illustration-img {
+        height: 300px;
+        margin-top: 2rem;
     }
 
     .contact-content {
