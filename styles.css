@@ -243,20 +243,6 @@ body {
     gap: 1rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    background: #020203;
-    padding: 1rem 0;
-    z-index: 100;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.menu-filters.sticky-active {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    background: rgba(2, 2, 3, 0.95);
-    backdrop-filter: blur(10px);
 }
 
 .filter-btn {
@@ -678,9 +664,6 @@ body {
 
     .menu-filters {
         justify-content: center;
-        top: 70px;
-        padding: 0.75rem 0;
-        border-radius: 0 0 10px 10px;
     }
 
     .filter-btn {

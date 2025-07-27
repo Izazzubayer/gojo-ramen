@@ -221,7 +221,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
     setupSmoothScrolling();
     setupNavbarScroll();
-    setupStickyMenuFilters();
 });
 
 // Function to create Lucide icons
@@ -409,27 +408,7 @@ function setupSmoothScrolling() {
     });
 }
 
-// Setup sticky menu filters
-function setupStickyMenuFilters() {
-    const menuFilters = document.querySelector('.menu-filters');
-    const menuSection = document.querySelector('.menu-section');
-    
-    if (!menuFilters || !menuSection) return;
-    
-    const menuSectionTop = menuSection.offsetTop;
-    const filtersHeight = menuFilters.offsetHeight;
-    
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Check if we've scrolled past the menu section
-        if (scrollTop >= menuSectionTop) {
-            menuFilters.classList.add('sticky-active');
-        } else {
-            menuFilters.classList.remove('sticky-active');
-        }
-    });
-}
+
 
 // Setup navbar scroll effect
 function setupNavbarScroll() {
