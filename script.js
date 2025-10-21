@@ -7,7 +7,7 @@ const menuItems = [
         description: "Fresh Atlantic salmon (sake) hand-pressed over perfectly seasoned sushi rice. The salmon is carefully selected for its rich, buttery texture and vibrant orange color. Served with a touch of wasabi between the fish and rice, and garnished with a thin slice of pickled ginger. The rice is seasoned with premium rice vinegar, sugar, and sea salt for authentic flavor.",
         price: "৳180",
         category: "sushi",
-        tags: ["Fresh", "Popular"],
+        tags: ["Fresh", "Popular", "Raw", "Traditional"],
         ingredients: ["fish"],
         spiceLevel: 1,
         image: "images/photo-1632440722549-692fc6af969e.jpg"
@@ -18,7 +18,7 @@ const menuItems = [
         description: "Premium bluefin tuna (maguro) sourced from sustainable fisheries, hand-pressed over seasoned sushi rice. The tuna features a deep red color and firm, meaty texture. Includes a small amount of wasabi for heat and pickled ginger for palate cleansing. The rice is prepared with traditional Japanese rice vinegar, mirin, and sea salt for authentic taste.",
         price: "৳200",
         category: "sushi",
-        tags: ["Fresh", "Premium"],
+        tags: ["Fresh", "Premium", "Raw", "Traditional", "Sustainable"],
         ingredients: ["fish"],
         spiceLevel: 1,
         image: "images/photo-1629684782790-385ed5adb497.jpg"
@@ -29,7 +29,7 @@ const menuItems = [
         description: "Inside-out roll featuring imitation crab meat (kani), ripe avocado, and fresh cucumber wrapped in premium sushi rice and toasted nori seaweed. The roll is coated with tobiko (flying fish roe) for added texture and visual appeal. Served with soy sauce, wasabi, and pickled ginger. The rice is seasoned with rice vinegar, sugar, and salt for perfect balance.",
         price: "৳250",
         category: "sushi",
-        tags: ["Vegetarian-friendly", "Popular"],
+        tags: ["Vegetarian-friendly", "Popular", "Creamy", "Mild"],
         ingredients: ["crab"],
         spiceLevel: 1,
         image: "images/photo-1617196034796-73dfa7b1fd56.jpg"
@@ -40,7 +40,7 @@ const menuItems = [
         description: "Premium roll featuring grilled eel (unagi) brushed with sweet teriyaki sauce, fresh avocado, and cucumber wrapped in sushi rice and nori. Topped with thinly sliced avocado arranged to resemble dragon scales, drizzled with spicy mayo (sriracha and Japanese mayonnaise) and unagi sauce. Garnished with tobiko and green onions for color and texture.",
         price: "৳320",
         category: "sushi",
-        tags: ["Spicy", "Premium"],
+        tags: ["Spicy", "Premium", "Grilled", "Rich"],
         ingredients: ["eel"],
         spiceLevel: 2,
         image: "images/photo-1614563637806-1d0e645e0940.jpg"
@@ -51,7 +51,7 @@ const menuItems = [
         description: "Fresh tuna mixed with spicy mayo (sriracha, Japanese mayonnaise, and sesame oil), fresh cucumber, and green onions wrapped in sushi rice and nori. The spicy mixture includes finely chopped tuna, chili sauce, and a hint of lime juice for brightness. Served with soy sauce and additional wasabi for extra heat if desired.",
         price: "৳280",
         category: "sushi",
-        tags: ["Spicy", "Popular"],
+        tags: ["Spicy", "Popular", "Raw", "Bold"],
         ingredients: ["fish"],
         spiceLevel: 3,
         image: "images/photo-1611762687807-7cdd09aef422.jpg"
@@ -62,7 +62,7 @@ const menuItems = [
         description: "Creamy roll featuring smoked salmon (lox), Philadelphia cream cheese, and fresh cucumber wrapped in sushi rice and nori. The cream cheese is softened and spread evenly for smooth texture. Topped with sesame seeds and served with soy sauce. A fusion of Japanese and American flavors, perfect for those who enjoy rich, creamy textures.",
         price: "৳300",
         category: "sushi",
-        tags: ["Creamy", "Popular"],
+        tags: ["Creamy", "Popular", "Smoked", "Fusion"],
         ingredients: ["fish"],
         spiceLevel: 1,
         image: "images/photo-1611518040286-9af8ba97ab46.jpg"
@@ -73,7 +73,7 @@ const menuItems = [
         description: "California roll base (crab, avocado, cucumber) topped with an assortment of fresh fish including salmon, tuna, yellowtail (hamachi), and white fish, arranged in a colorful pattern. Each fish slice is carefully placed to create a beautiful rainbow effect. Served with soy sauce, wasabi, and pickled ginger. A feast for both the eyes and palate.",
         price: "৳350",
         category: "sushi",
-        tags: ["Colorful", "Premium"],
+        tags: ["Colorful", "Premium", "Raw", "Variety"],
         ingredients: ["fish", "crab"],
         spiceLevel: 1,
         image: "images/photo-1611143669185-af224c5e3252.jpg"
@@ -84,7 +84,7 @@ const menuItems = [
         description: "Crispy shrimp tempura (battered and deep-fried shrimp) with fresh avocado and cucumber wrapped in sushi rice and nori. The tempura batter is made with cold water, flour, and egg for maximum crispiness. Drizzled with spicy mayo and unagi sauce, topped with tempura flakes for extra crunch. Served with soy sauce and wasabi.",
         price: "৳320",
         category: "sushi",
-        tags: ["Crispy", "Popular"],
+        tags: ["Crispy", "Popular", "Fried", "Crunchy"],
         ingredients: ["shrimp"],
         spiceLevel: 2,
         image: "images/photo-1608060146923-7b8ab13e22bb.jpg"
@@ -94,55 +94,55 @@ const menuItems = [
     {
         id: 9,
         name: "Tonkotsu Ramen",
-        description: "Rich and creamy pork bone broth simmered for 12+ hours with pork trotters, bones, and collagen-rich ingredients. Served with chashu pork (braised pork belly), soft-boiled egg (ajitama), bamboo shoots (menma), green onions, nori, and corn. The broth is seasoned with soy sauce, mirin, and garlic. Topped with black garlic oil and served with fresh ramen noodles.",
+        description: "Rich and creamy vegetable-based broth simmered for 12+ hours with mushrooms, kombu seaweed, and collagen-rich ingredients. Served with tofu, soft-boiled egg (ajitama), bamboo shoots (menma), green onions, nori, and corn. The broth is seasoned with soy sauce, mirin, and garlic. Topped with black garlic oil and served with fresh ramen noodles.",
         price: "৳450",
         category: "ramen",
-        tags: ["Signature", "Popular"],
-        ingredients: ["pork"],
+        tags: ["Signature", "Popular", "Rich", "Vegetarian", "Creamy"],
+        ingredients: ["vegetables"],
         spiceLevel: 1,
         image: "images/photo-1602273660127-a0000560a4c1.jpg"
     },
     {
         id: 10,
         name: "Miso Ramen",
-        description: "Savory miso-based broth made with red and white miso paste, chicken stock, and pork stock. Features chashu pork, soft-boiled egg, corn, bean sprouts, green onions, and nori. The broth includes garlic, ginger, and sesame oil for depth. Served with medium-thick ramen noodles and garnished with sesame seeds and chili oil for added flavor.",
+        description: "Savory miso-based broth made with red and white miso paste and chicken stock. Features tofu, soft-boiled egg, corn, bean sprouts, green onions, and nori. The broth includes garlic, ginger, and sesame oil for depth. Served with medium-thick ramen noodles and garnished with sesame seeds and chili oil for added flavor.",
         price: "৳420",
         category: "ramen",
-        tags: ["Traditional", "Vegetarian-friendly"],
-        ingredients: ["pork", "chicken"],
+        tags: ["Traditional", "Vegetarian-friendly", "Savory", "Mild"],
+        ingredients: ["chicken"],
         spiceLevel: 1,
         image: "images/photo-1592466741848-20145fe5d6d7.jpg"
     },
     {
         id: 11,
         name: "Shoyu Ramen",
-        description: "Clear soy sauce-based broth made with chicken and pork stock, seasoned with soy sauce, mirin, and sake. Served with chashu pork, soft-boiled egg, bamboo shoots, green onions, nori, and fish cake (narutomaki). The broth is light yet flavorful, perfect for those who prefer a less heavy option. Noodles are medium-thin and springy.",
+        description: "Clear soy sauce-based broth made with chicken stock, seasoned with soy sauce, mirin, and sake. Served with tofu, soft-boiled egg, bamboo shoots, green onions, nori, and fish cake (narutomaki). The broth is light yet flavorful, perfect for those who prefer a less heavy option. Noodles are medium-thin and springy.",
         price: "৳400",
         category: "ramen",
-        tags: ["Classic", "Light"],
-        ingredients: ["pork", "chicken"],
+        tags: ["Classic", "Light", "Clear", "Traditional"],
+        ingredients: ["chicken"],
         spiceLevel: 1,
         image: "images/photo-1569912815867-5580004c13a2.jpg"
     },
     {
         id: 12,
         name: "Spicy Ramen",
-        description: "Bold and fiery broth made with chicken stock, chili oil, garlic, ginger, and ground pork. Features chashu pork, soft-boiled egg, bean sprouts, green onions, and corn. The spiciness comes from a blend of chili peppers, garlic, and Sichuan peppercorns. Topped with fresh cilantro and served with thick ramen noodles that hold the spicy broth well.",
+        description: "Bold and fiery broth made with chicken stock, chili oil, garlic, ginger, and ground chicken. Features tofu, soft-boiled egg, bean sprouts, green onions, and corn. The spiciness comes from a blend of chili peppers, garlic, and Sichuan peppercorns. Topped with fresh cilantro and served with thick ramen noodles that hold the spicy broth well.",
         price: "৳480",
         category: "ramen",
-        tags: ["Spicy", "Bold"],
-        ingredients: ["pork", "chicken"],
+        tags: ["Spicy", "Bold", "Fiery", "Hot"],
+        ingredients: ["chicken"],
         spiceLevel: 4,
         image: "images/photo-1569050467447-ce54b3bbc37d.jpg"
     },
     {
         id: 13,
         name: "Seafood Ramen",
-        description: "Rich fish-based broth made with bonito flakes, kombu seaweed, and fish bones. Features fresh shrimp, mussels, fish cake, soft-boiled egg, green onions, and nori. The broth is enhanced with sake, mirin, and soy sauce. Served with thin ramen noodles and garnished with lemon zest and fresh herbs. A lighter alternative to pork-based broths.",
+        description: "Rich fish-based broth made with bonito flakes, kombu seaweed, and fish bones. Features fresh shrimp, mussels, fish cake, soft-boiled egg, green onions, and nori. The broth is enhanced with sake, mirin, and soy sauce. Served with thin ramen noodles and garnished with lemon zest and fresh herbs. A lighter alternative to meat-based broths.",
         price: "৳520",
         category: "ramen",
-        tags: ["Seafood", "Premium"],
-        ingredients: ["fish", "shrimp", "pork"],
+        tags: ["Seafood", "Premium", "Light", "Fresh"],
+        ingredients: ["fish", "shrimp"],
         spiceLevel: 1,
         image: "images/photo-1519984388953-d2406bc725e1.jpg"
     },
@@ -152,7 +152,7 @@ const menuItems = [
         description: "Hearty vegetable broth made with shiitake mushrooms, kombu seaweed, and seasonal vegetables. Features tofu, shiitake mushrooms, corn, bean sprouts, green onions, and nori. The broth is seasoned with soy sauce, mirin, and sesame oil. Served with medium-thick ramen noodles and garnished with sesame seeds and chili oil. 100% plant-based and full of umami flavor.",
         price: "৳380",
         category: "ramen",
-        tags: ["Vegetarian", "Healthy"],
+        tags: ["Vegetarian", "Healthy", "Plant-based", "Umami"],
         ingredients: ["vegetables"],
         spiceLevel: 1,
         image: "images/photo-1519077204685-ed90d0cc05b7.jpg"
@@ -165,7 +165,7 @@ const menuItems = [
         description: "Fresh young soybeans steamed with sea salt and served in their pods. The beans are bright green and tender, with a slightly sweet and nutty flavor. Served warm with additional sea salt for dipping. A healthy and traditional Japanese appetizer rich in protein, fiber, and essential nutrients. Perfect for sharing and pairs well with sake or beer.",
         price: "৳120",
         category: "appetizers",
-        tags: ["Healthy", "Vegetarian"],
+        tags: ["Healthy", "Vegetarian", "Traditional", "Protein-rich"],
         ingredients: ["vegetables"],
         spiceLevel: 1,
         image: "images/photo-1496114212242-bac8bd9de53d.jpg"
@@ -173,11 +173,11 @@ const menuItems = [
     {
         id: 16,
         name: "Gyoza",
-        description: "Pan-fried Japanese dumplings filled with ground pork, cabbage, green onions, garlic, ginger, and sesame oil. The dumpling wrappers are made from wheat flour and water, creating a thin, delicate skin. Served with a dipping sauce made from soy sauce, rice vinegar, and chili oil. The dumplings are crispy on the bottom and steamed on top for perfect texture.",
+        description: "Pan-fried Japanese dumplings filled with ground chicken, cabbage, green onions, garlic, ginger, and sesame oil. The dumpling wrappers are made from wheat flour and water, creating a thin, delicate skin. Served with a dipping sauce made from soy sauce, rice vinegar, and chili oil. The dumplings are crispy on the bottom and steamed on top for perfect texture.",
         price: "৳180",
         category: "appetizers",
-        tags: ["Crispy", "Popular"],
-        ingredients: ["pork"],
+        tags: ["Crispy", "Popular", "Pan-fried", "Savory"],
+        ingredients: ["chicken"],
         spiceLevel: 2,
         image: "images/photo-1753215102947-94ab36ac82c6.jpg"
     },
@@ -189,7 +189,7 @@ const menuItems = [
         description: "Premium Japanese sencha green tea, carefully selected from the finest tea gardens. The tea leaves are steamed and rolled to preserve their natural flavor and nutrients. Rich in antioxidants and catechins, with a fresh, grassy aroma and smooth, slightly astringent taste. Served hot in traditional Japanese tea cups. Perfect for cleansing the palate between courses.",
         price: "৳60",
         category: "drinks",
-        tags: ["Traditional", "Healthy"],
+        tags: ["Traditional", "Healthy", "Antioxidant", "Hot"],
         ingredients: ["tea"],
         spiceLevel: 1,
         image: "images/photo-1632440722549-692fc6af969e.jpg"
@@ -200,7 +200,7 @@ const menuItems = [
         description: "Premium Junmai sake made from polished rice, water, koji mold, and yeast. This traditional Japanese rice wine features a smooth, clean taste with subtle fruity notes and a gentle finish. Served chilled in traditional sake cups. The sake is made using traditional brewing methods that have been perfected over centuries. Perfect accompaniment to sushi and sashimi.",
         price: "৳350",
         category: "drinks",
-        tags: ["Alcoholic", "Premium"],
+        tags: ["Alcoholic", "Premium", "Traditional", "Fermented"],
         ingredients: ["rice"],
         spiceLevel: 1,
         image: "images/photo-1629684782790-385ed5adb497.jpg"
@@ -285,7 +285,6 @@ function createMenuItem(item) {
 function getIngredientIcon(ingredient) {
     const iconMap = {
         'fish': 'fish',
-        'pork': 'piggy-bank',
         'chicken': 'egg',
         'beef': 'beef',
         'shrimp': 'shrimp',
